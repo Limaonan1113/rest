@@ -12,3 +12,13 @@ SPRING BOOT RESTFUL
     <artifactId>mybatis-spring-boot-starter</artifactId>
     <version>2.1.1</version>
     </dependency>
+#### 启动类加注解
+    @SpringBootApplication
+    @MapperScan("com.restful.rest.mapper") //扫描mapper下面所有interface
+    public class RestApplication {
+    
+        public static void main(String[] args) {
+            SpringApplication.run(RestApplication.class, args);
+        }
+    
+    }
