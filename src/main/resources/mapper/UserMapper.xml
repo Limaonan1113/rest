@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="com.restful.rest.mapper.UserMapper"  xmlns="http://mybatis.org/schema/mybatis-mapper">
+    <resultMap id="UserMap" type="com.restful.rest.Dao.User">
+        <result column="id" javaType="VARCHAR" property="id" />
+        <result column="name" javaType="VARCHAR" property="name"/>
+        <result column="phone_number" javaType="VARCHAR" property="phoneNumber" />
+        <result column="email" javaType="VARCHAR" property="email" />
+        <result column="address" javaType="VARCHAR" property="address"/>
+    </resultMap>
+</mapper>

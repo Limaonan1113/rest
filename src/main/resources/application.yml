@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://X.X.X.X:3306/mangoudb
+    username:
+    password:
+
+

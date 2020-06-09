@@ -23,8 +23,11 @@ public class RestfulTestContrroller {
         return b;
     }
     @GetMapping("/userlistParam")
-    public Map userlistParam(@RequestParam(required = true)String xgc){
+    public Map userlistParam(@RequestParam(required = false)String xgc){
         Map b = new HashMap();
+        if(xgc==null || "".equals(xgc)){
+            b.put("code","fail");
+        }
         b.put("xgc",xgc);
         return b;
     }
