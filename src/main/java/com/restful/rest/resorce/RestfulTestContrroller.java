@@ -1,11 +1,11 @@
 package com.restful.rest.resorce;
 
+import com.restful.rest.Dao.User;
+import com.restful.rest.service.UserService;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -14,6 +14,9 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/user")
 public class RestfulTestContrroller {
+
+    @Autowired
+    private UserService userService;
 
     @GetMapping("/userlist")
     public Map userlist(){
@@ -30,6 +33,19 @@ public class RestfulTestContrroller {
         }
         b.put("xgc",xgc);
         return b;
+    }
+
+    @PostMapping("/add")
+    public  Map add(@RequestBody User user){
+        Map b = new HashMap();
+        userService.add(user);
+        b.put("test","ok");
+        return b;
+    }
+
+    @GetMapping("/show")
+    public List<User> show(){
+        return userService.show();
     }
 
  }

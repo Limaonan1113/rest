@@ -7,4 +7,16 @@
         <result column="email" javaType="VARCHAR" property="email" />
         <result column="address" javaType="VARCHAR" property="address"/>
     </resultMap>
+    <insert id="add" parameterType="com.restful.rest.mapper.UserMapper">
+        insert into user (name,phone_number,email,address)
+        values(
+        #{name,jdbcType=VARCHAR},
+        #{phoneNumber,jdbcType=VARCHAR},
+        #{email,jdbcType=VARCHAR},
+        #{address,jdbcType=VARCHAR}
+        )
+    </insert>
+    <select id="show" parameterType="java.lang.String" resultMap="UserMap">
+        select * from user;
+    </select>
 </mapper>
