@@ -22,3 +22,10 @@ SPRING BOOT RESTFUL
         }
     
     }
+    
+### spring Boot最重要的四个核心
+    1、自动配置：针对很多spring应用程序常见的应用功能，spring Boot能自动提供相关配置
+    2、起步依赖：告诉spring Boot需要什么功能，他就能引入需要的库。
+    3、命令行界面：这是Spring Boot的可选特性，借此你只需要写代码就能完整的应用程序，无
+       无需传统项目构建。
+    4、Actuator：让你能够深入运行的spring Boot应用程序，一探究竟。
