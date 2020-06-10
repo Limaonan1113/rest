@@ -1,10 +1,8 @@
 package com.restful.rest.resorce;
 
-import com.restful.rest.Dao.User;
+import com.restful.rest.model.User;
 import com.restful.rest.service.UserService;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;

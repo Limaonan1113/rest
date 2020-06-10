@@ -1,10 +1,9 @@
 package com.restful.rest.service;
 
-import com.restful.rest.Dao.User;
+import com.restful.rest.model.User;
 import com.restful.rest.mapper.UserMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

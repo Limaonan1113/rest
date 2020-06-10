@@ -1,6 +1,6 @@
 package com.restful.rest.mapper;
 
-import com.restful.rest.Dao.User;
+import com.restful.rest.model.User;
 
 import java.util.List;
 

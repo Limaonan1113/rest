@@ -1,4 +1,4 @@
-package com.restful.rest.Dao;
+package com.restful.rest.model;
 
 public class User {
     String id;//id
