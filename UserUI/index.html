@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>user</title>
 </head>
 <body>
-    <div>
- <input class="input"/>
-        <br />
- <input class="input"/>
-        <br/>
- <input class="input"/>
-        <br/>
- <input class="input"/>
-        <br />
- <input class="input"/>
-        <br/>
- <input class="input"/>
- <br/>
+    <div id ="app">
+        {{ message }}
     </div>
+    <div id="app2">
+        <span v-bind:title="message">
+            此处显示鼠标显示动态绑定提示信息
+        </span>
+    </div>
+    <div id ="app4">
+    <ol>
+    <li v-for="todo in todos">
+        {{ todo.text }}
+    </li>
+    </ol>
+    </div>
+    <script src="./JS/vue.js"></script>
+    <script src="./JS/myjs/index.js"></script>
 </body>
 </html>
